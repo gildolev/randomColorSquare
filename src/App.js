@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
-
+import Initials from './Initials';
+import Days from './Days'
+import Menu from './Menu/Menu';
+import RandomColorSquare from './RandomColorSquare/RandomColorSquare';
+import MenuItem from './MenuItem/MenuItem';
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div >
+      <Menu style={{display:'flex'}}>
+        <MenuItem label="HomePage" link='/' />
+        <MenuItem label="Contact" link='/About Us' />
+        <MenuItem label="Prices" link='Contact' />
+      </Menu>
+      <RandomColorSquare />
+
     </div>
+
   );
 }
+
+
+
+
 
 export default App;
